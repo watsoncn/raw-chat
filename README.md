@@ -1,7 +1,3 @@
-### Mock
-
-![Mock Up]("./mock.png")
-
 ### What were using
 
 * React 16
@@ -27,7 +23,7 @@
 * Fork and clone the project:
 
 ```
-git clone https://github.com/ReactJSResources/react-webpack-babel.git
+git clone project
 ```
 
 * Then install the dependencies:
@@ -119,7 +115,3 @@ npm run lint
 
 * styles having /src/ in their absolute path considered part of the application and exported as local css modules.
 * other styles considered global styles used by components and included in the css bundle directly.
-
-### Contribute
-
-Please contribute to the project if you know how to make it better, including this README :)
