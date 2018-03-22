@@ -2,7 +2,11 @@ import React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import Styles from "./styles";
+import "normalize.css";
+import "styles/base/_main.sass";
+import "styles/base/_common.sass";
+import styles from "./app.sass";
+import "./app.sass";
 
 const App = () => {
   return (

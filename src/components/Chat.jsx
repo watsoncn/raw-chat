@@ -7,7 +7,12 @@ class Chat extends Component {
     super(props);
   }
   render() {
-    return <div>Chat</div>;
+    return (
+      <div>
+        <h1>Welcome to the chat room</h1>
+        <h3>Waiting for another person to connect</h3>
+      </div>
+    );
   }
 }
 
