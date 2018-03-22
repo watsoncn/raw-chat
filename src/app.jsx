@@ -1,11 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import "normalize.css";
-
-import "styles/base/_main.sass"; // Global styles
-import "styles/base/_common.sass"; // Global styles
-import styles from "./app.sass"; // Css-module styles
+import styles from "./app.sass";
 
 const App = () => {
   return (
