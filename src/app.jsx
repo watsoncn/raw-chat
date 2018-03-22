@@ -1,13 +1,20 @@
 import React from "react";
+import { Grid, Row, Col } from "react-bootstrap";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import styles from "./app.sass";
+import Styles from "./styles";
 
 const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Body />
+      <Grid>
+        <Row>
+          <Col md={8} mdOffset={2}>
+            <Header />
+            <Body />
+          </Col>
+        </Row>
+      </Grid>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Bootstrap from "react-bootstrap";
-import styles from "../app.sass";
+import Styles from "../styles.js";
 
 class Header extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <h1>Raw Chat</h1>
+        <h1 className={Styles.header}>Raw Chat</h1>
         <hr />
       </div>
     );
