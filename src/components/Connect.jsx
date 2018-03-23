@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  Row,
-  Col,
-  FormGroup,
-  InputGroup,
-  Button,
-  FormControl
-} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import styles from "../app.sass";
 
 class Connect extends Component {
@@ -26,7 +19,7 @@ class Connect extends Component {
   render() {
     return (
       <div>
-        <h3 className="connectCopy">Welcome, let's connect!</h3>
+        <h3 className="connectCopy">Welcome! What's your name?</h3>
         <Row id="userCreate">
           <Col md={6} mdOffset={3}>
             <div className="form-group">

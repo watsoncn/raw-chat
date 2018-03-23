@@ -8,8 +8,8 @@ class Body extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      connected: false,
-      userFirst: null,
+      checkedIn: false,
+      userFirst: "John",
       userSecond: null
     };
   }
@@ -18,22 +18,28 @@ class Body extends Component {
     // TODO: REFACTOR WITH TERNARY
     if (!this.state.userFirst) {
       this.setState({
-        connected: true,
+        checkedIn: true,
         userFirst: user
       });
-    } else {
+    } else if (!this.state.userSecond) {
       this.setState({
-        connected: true,
+        checkedIn: true,
         userSecond: user
       });
+    } else {
+      alert("Chat room busy. Please check later.");
     }
   };
 
   render() {
-    const connectOrChat = !this.state.connected ? (
+    const connectOrChat = !this.state.checkedIn ? (
       <Connect signin={this.handleUserConnect} />
     ) : (
-      <Chat />
+      <Chat
+        userOne={this.state.userFirst}
+        userTwo={this.state.userSecond}
+        checkedIn={this.state.checkedIn}
+      />
     );
     return <div>{connectOrChat}</div>;
   }
